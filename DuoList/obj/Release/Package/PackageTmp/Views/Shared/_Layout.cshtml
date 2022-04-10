@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duo List</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" type="text/css" href="~/Content/Custom/nav.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Custom/Shared/SharedElements.css" />
+
+</head>
+<body>
+    @Html.Hidden("HiddenCurrentUrl", Url.Content("~"))
+    <div id="Overlay" class="hide"></div>
+    <div class="navContainer">
+        <div class="navContent">
+            <div class="navElementContainer">
+                <a href="/"><h3 id="appName">ToDuo</h3></a>
+            </div>
+        </div>
+        <div class="navElementContainer">
+            <h3 id="appSpacer">|</h3>
+        </div>
+        <div class="navElementContainer">
+            <ul>
+                <li><a href="/">GroceryList</a></li>
+                <li><a href="#">To Do List</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="container body-content">
+
+        @RenderBody()
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+</body>
+</html>

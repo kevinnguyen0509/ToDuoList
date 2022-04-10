@@ -1,0 +1,26 @@
+﻿@model DuoList.Models.IndexViewModel
+
+<div class="col-xs-12" id="searchBodyContainer">
+    <!--Input SearchBar-->
+    <div class="col-md-12 searchBarContainer">
+        <input id="searchInputTxt" type="text" class="form-control" placeholder="What are we shopping for, Carrots?" />
+        <div type="button" id="submitSearchBtn"><i class="fa fa-sort" aria-hidden="true"></i></div>
+
+    </div>
+    <!--Icon Contents-->
+    <div id="searchIconContainer" class="hide">
+        <h4 id="RecommendedLabel" class="IconTitleLbl">Recommended:</h4>
+        <div id="RecommendedSuggestionContainer"></div>
+@*        <i class="flaticon-apple-1 SearchIcons" title="flaticon-apple-1 SearchIcons"></i>
+        <i class="flaticon-apple SearchIcons" title="flaticon-apple SearchIcons"></i>
+        <i class="flaticon-apple-jam SearchIcons" title="flaticon-apple-Jam SearchIcons"></i>*@
+        <hr />
+        <h4 class="IconTitleLbl">All Icons:</h4>
+        @foreach (var iconElement in Model.flatIcons)
+        {
+            <i class="@iconElement SearchIcons"  title="@iconElement"></i>
+        }
+    </div>
+</div>
+
+<script type="module" src="@Url.Content("~/Scripts/View/Index/_SearchContainer.js")"></script>

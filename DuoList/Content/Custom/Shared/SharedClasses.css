@@ -1,0 +1,15 @@
+﻿.hide{
+    display: none;
+}
+
+.Yellow {
+    background: #e8dd24;
+}
+
+.Purple {
+    background: #7428fc;
+}
+
+.defaultBoxShadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

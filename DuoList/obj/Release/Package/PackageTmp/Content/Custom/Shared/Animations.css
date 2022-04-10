@@ -1,0 +1,173 @@
+﻿.FadeInFiftyPercent {
+    animation-duration: 1s;
+    animation-name: FadeInFiftyPercent;
+}
+
+.FadeInNinty {
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+    animation-name: FadeInNinty;
+}
+
+
+.FadeInSearchContainer {
+    animation-duration: .5s;
+    animation-name: FadeInSearchContainer;
+}
+
+.shrinkSearchContainerAway {
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    animation-name: shrinkSearchContainerAway;
+}
+
+.growAndShrink {
+    animation-duration: 1.5s;
+
+    animation-iteration-count: infinite;
+    animation-name: growAndShrink;
+}
+
+.growAndShrinkDelayTwoHundredMillisecones {
+    animation-duration: 1.5s;
+    animation-delay: 200ms;
+    animation-iteration-count: infinite;
+    animation-name: growAndShrinkDelayTwoHundredMillisecones;
+}
+
+.growAndShrinkDelayFourHundredMillisecones {
+    animation-duration: 1.5s;
+    animation-delay: 400ms;
+    animation-iteration-count: infinite;
+    animation-name: growAndShrinkDelayFourHundredMillisecones;
+}
+
+.changeLoadingColors {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: changeLoadingColors;
+    transition: ease-in-out;
+}
+
+/*************************Keyframes************************************/
+
+@keyframes changeLoadingColors {
+    0% {
+        color: #e9e7c6;
+        
+    }
+
+    25% {
+        color: #f7ea06;
+    }
+
+    50% {
+        color: #ee8718;
+    }
+
+    75% {
+        color: #f7ea06;
+    }
+
+    100% {
+        color: #e9e7c6;
+    }
+}
+
+@keyframes growAndShrinkDelayFourHundredMillisecones {
+    0% {
+        width: 0em;
+        height: 0em;
+    }
+
+    50% {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    100% {
+        width: 0em;
+        height: 0em;
+    }
+}
+
+@keyframes growAndShrinkDelayTwoHundredMillisecones {
+    0% {
+        width: 0em;
+        height: 0em;
+    }
+
+    50% {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    100% {
+        width: 0em;
+        height: 0em;
+    }
+}
+
+@keyframes growAndShrink {
+    0% {
+        width: 0em;
+        height: 0em;
+    }
+
+    50% {
+        width: 1.5em;
+        height: 1.5em;
+    }
+    100% {
+        width: 0em;
+        height: 0em;
+    }
+}
+
+@keyframes FadeInFiftyPercent{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: .5;
+    }
+}
+
+@keyframes FadeInNinty {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: .9;
+    }
+}
+
+
+
+@keyframes FadeInSearchContainer {
+    from {
+        height: 0px;
+        opacity: 0;
+    }
+
+    to {
+        height: 300px;
+        opacity: 1;
+    }
+}
+
+@keyframes shrinkSearchContainerAway {
+    0% {
+        height: 300px;
+        width: 100%;
+    }
+    50%{
+        height: 30px;
+        width: 100%;
+    }
+    to {
+        height: 0px;
+        width: 0px;
+    }
+}

@@ -1,0 +1,24 @@
+﻿@model DuoList.Models.IndexViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+    <link rel="stylesheet" type="text/css" href="~/Content/vendor/css/font/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Custom/Index.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Custom/Components/card.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Custom/Shared/SharedClasses.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Custom/Shared/Animations.css" />
+
+
+}
+
+@Html.Hidden("OwnerID", Model.OwnerID)
+@Html.Hidden("PartnerID", Model.PartnerID)
+
+<div class="row">
+    @Html.Partial("_IndexSearchContainer", Model)
+    @Html.Partial("_IndexCardContainer", Model)
+</div>
+
+<!--Main Scripts-->
+<script type="module" src="@Url.Content("~/Scripts/View/Index/Index.js")"></script>
+

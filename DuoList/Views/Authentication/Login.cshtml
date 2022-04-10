@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    <link rel="stylesheet" type="text/css" href="~/Content/Custom/Login.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Custom/Shared/SharedClasses.css" />
+}
+
+<div id="LoginBody">
+    <div id="LoginContainer" class="defaultBoxShadow">
+        <div id="LoginLogoContainer">
+            <div id="LogoBackground" class="defaultBoxShadow"><i class="fa fa-user-o" id="LoginIcon"></i></div>
+        </div>
+        <form action="/Authentication/LoginVerification" method="post" id="LoginForm">
+            <div id="inputFields">
+                <div id="UsernameContainer" class="LoginInputContainers ">
+                    <div id="userFieldIconContainer" class="defaultBoxShadow"><i class="fa fa-user" id="userFieldIcon"></i></div>
+                    <div id="userFieldContainer"><input type="email" name="Email" id="UsernameInputTxt" class="form-control inputFields defaultBoxShadow" placeholder="Email" /></div>
+                </div>
+
+                <div id="UsernameContainer" class="LoginInputContainers ">
+                    <div id="userFieldIconContainer" class="defaultBoxShadow"><i class="fa fa-lock" id="userFieldIcon"></i></div>
+                    <div id="userFieldContainer"><input type="password" name="password" id="UsernameInputTxt" class="form-control inputFields defaultBoxShadow" placeholder="Password" /></div>
+                </div>
+
+                <div id="UsernameContainer" class="LoginInputContainers loginBtnContainer">
+                    <button type="submit" class="btn bg-danger btn-info defaultBoxShadow" id="LoginBtn">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="module" src="~/Scripts/View/Login/Login.js"></script>

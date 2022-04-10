@@ -1,0 +1,42 @@
+﻿/*https://www.macstories.net/sponsored/grocery-the-smart-shopping-list-app-that-puts-your-list-in-order-sponsor/*/
+a,
+a:hover,
+a:visited,
+a:focus,
+a:active{
+    text-decoration: none;
+    color: #f6ec39;
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    background: #212121;
+    height: 40px;
+    
+    margin: 0px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.navContent {
+    padding: 0px 15px;
+}
+    .navElementContainer{
+        
+    }
+        #appName{
+            font-weight: 600;
+            
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+            ul li{
+                margin: 0px 10px;
+            }
+h3 {
+    margin: 0px;
+}

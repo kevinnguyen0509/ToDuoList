@@ -1,0 +1,94 @@
+﻿/******************Regular card**********************/
+.card{
+    position: relative;
+}
+
+.card, .ghostCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    flex-basis: 25%;
+    flex-grow: 1;
+    background: #7428fc;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+    .card:hover, .ghostCard:hover {
+/*        background: #f6ec39;*/
+        transition: .5s all;
+    }
+
+    .card i, .ghostCard i {
+        font-size: 70px;
+    }
+
+/******************loading/saving card *********************/
+
+
+.cardOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-radius: 15px;
+    opacity: .9;
+
+}
+
+#updateClickOverlayTxt {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.ghostCard,
+.ghostCard:hover {
+    background: #0C0A1B;
+    opacity: .5;
+    cursor: default;
+}
+#loadingContainer{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+    .loadingDot {
+        border-radius: 100px;
+        width: 1.5em;
+        height: 1.5em;
+        background: blue;
+        margin: .3em;
+
+    }
+
+#dot-1 {
+    background: #e9e7c6;
+}
+
+#dot-2 {
+    background: #f7ea06;
+}
+
+#dot-3 {
+    background: #ee8718;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        flex-basis: 40%;
+    }
+
+    .row {
+        padding: 10px;
+    }
+}
